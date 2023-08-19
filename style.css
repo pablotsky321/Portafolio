@@ -5,3 +5,16 @@ table{
     width: 300px;
     height: 300;
 }
+.foto{
+    width: 200px;
+}
+.nombre{
+    -webkit-text-fill-color: brown;
+}
+.descripcion{
+    -webkit-text-fill-color:peru;
+}
+h2{
+-webkit-text-fill-color: sienna;
+}
+
