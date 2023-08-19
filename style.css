@@ -10,13 +10,13 @@ table{
     border-radius: 360px;
 }
 .nombre{
-    -webkit-text-fill-color: brown;
+    -webkit-text-fill-color:aquamarine;
 }
 .descripcion{
-    -webkit-text-fill-color:peru;
+    -webkit-text-fill-color:cyan;
 }
 h2{
--webkit-text-fill-color: sienna;
+-webkit-text-fill-color: rgb(128, 235, 235);
 }
 header{
     display: flex;
@@ -28,4 +28,15 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+body{
+    background: url("fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+li{
+    -webkit-text-fill-color:rgb(165, 161, 231);
+}
+a{
+    -webkit-text-fill-color:ghostwhite;
 }
