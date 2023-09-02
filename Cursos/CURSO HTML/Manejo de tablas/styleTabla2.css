@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aquamarine;
+    background-color: grey;
+    font-size: 14px;
+}
+table{
+    width: 25px;
+    height: 300px;
+    background-color: brown;
+}
+th{
+    border-style:groove;
+}
