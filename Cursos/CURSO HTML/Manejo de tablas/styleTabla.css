@@ -25,6 +25,8 @@ td{
 }
 th{
     background-color: aquamarine;
+    width: 200px;
+    border-style: groove;
 }
 
 
