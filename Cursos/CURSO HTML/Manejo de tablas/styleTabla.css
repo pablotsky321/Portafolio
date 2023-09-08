@@ -15,6 +15,9 @@ body{
     background-color: black;
     background-color: grey;
     font-size: 14px;
+    width: 100hw;
+    height: 100vh;
+    align-items: center;
 }
 td{
     border: 10px;
@@ -30,5 +33,13 @@ th{
     border-style: ridge;
     border:10px;
 }
-
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    -webkit-text-fill-color: bisque;
+    border-style:solid;
+    border-radius:20px;
+    padding: 15px;
+}
 
