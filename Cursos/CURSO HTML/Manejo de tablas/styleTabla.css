@@ -36,10 +36,16 @@ th{
 form{
     display: flex;
     flex-direction: column;
-    background-color: black;
-    -webkit-text-fill-color: bisque;
+    background-color:aquamarine;
+    -webkit-text-fill-color:black;
     border-style:solid;
     border-radius:20px;
     padding: 15px;
 }
-
+.formularios{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 50%;
+    gap:15px;
+}

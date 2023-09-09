@@ -44,6 +44,7 @@
         </tr>
     </table>
     <br>
+    <section class="formularios">
     <form>
         <label for="Nombre">Nombres</label>
         <input type="text" class="Nombre" id="Nombre">
@@ -51,19 +52,19 @@
         <input type="text" class="Apellido" id="Apellido">
         <div>
             <label for="Masculino">Masculino</label>
-            <input type="radio" id="Masculino" class="Masculino">
+            <input type="radio" id="Masculino" class="Masculino" name="Genero" value="masculino">
         </div>
         <div>
             <label for="Femenino">Femenino</label>
-            <input type="radio" id="Femenino" class="Femenino">
+            <input type="radio" id="Femenino" class="Femenino" name="Genero" value="femenino">
         </div>
         <div>
             <input type="reset" name="Borrar" id="Borrar">
-            <input type="submit" name="Guardar" id="Guardar">
+            <button onclick="alerta()">Alertar</button>
         </div>
     </form>
+</section>
     <script src="scriptTabla.js"></script>
-    <canvas>alo</canvas>
 </body>
 
 </html>
