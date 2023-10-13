@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=!, initial-scale=1.0">
+        <title>Procolos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Consultas sobre Protocolos de Internet</h1>
+        </header>
+    
+        <form id="protocol-form" action="#" method="get">
+            <label for="protocol-select">Selecciona un protocolo:</label>
+            <select id="protocol-select" name="protocol">
+                <option value="http">HTTP</option>
+                <option value="tcpip">TCP/IP</option>
+                <option value="dns">DNS</option>
+                <option value="cdn">CDN</option>
+                <option value="www">WWW</option>
+                <option value="ftp">FTP</option>
+                <option value="html">HTML</option>
+            </select>
+            <input type="submit" value="Consultar">
+        </form>
+    
+        <div id="result">
+            <!-- Aquí se mostrarán los resultados de las consultas -->
+        </div>
+    
+        <script>
+            // JavaScript para manejar la consulta y mostrar los resultados
+            document.getElementById('protocol-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const selectedProtocol = document.getElementById('protocol-select').value;
+                const resultDiv = document.getElementById('result');
+    
+                // Puedes agregar código JavaScript para realizar consultas basadas en el protocolo seleccionado.
+                // Por ejemplo, puedes utilizar AJAX para cargar datos dinámicamente o simplemente mostrar información estática.
+    
+                // Aquí hay un ejemplo de cómo mostrar información estática.
+                let protocolInfo = '';
+                switch (selectedProtocol) {
+                    case 'http':
+                        protocolInfo = 'El Protocolo de Transferencia de Hipertexto (HTTP) es un protocolo de la capa de aplicación utilizado para la transferencia de datos en la World Wide Web.';
+                        break;
+                    case 'tcpip':
+                        protocolInfo = 'El Protocolo de Control de Transmisión/Protocolo de Internet (TCP/IP) es un conjunto de protocolos utilizados para la comunicación en Internet.';
+                        break;
+                    case 'dns':
+                        protocolInfo = 'El Sistema de Nombres de Dominio (DNS) se utiliza para traducir nombres de dominio legibles por humanos en direcciones IP numéricas.';
+                        break;
+                    case 'cdn':
+                        protocolInfo = 'Una Red de Entrega de Contenido (CDN) es una red de servidores distribuidos utilizada para acelerar la entrega de contenido web.';
+                        break;
+                    case 'www':
+                        protocolInfo = 'La World Wide Web (WWW) es un sistema de información global basado en hipertexto que se accede a través de Internet.';
+                        break;
+                    case 'ftp':
+                        protocolInfo = 'El Protocolo de Transferencia de Archivos (FTP) se utiliza para la transferencia de archivos a través de una red.';
+                        break;
+                    case 'html':
+                        protocolInfo = 'El Lenguaje de Marcado de Hipertexto (HTML) se utiliza para crear documentos web estructurados y formateados.';
+                        break;
+                    default:
+                        protocolInfo = 'Selecciona un protocolo para consultar.';
+                }
+    
+                resultDiv.innerHTML = protocolInfo;
+            });
+        </script>
+    </body>
+    </html>

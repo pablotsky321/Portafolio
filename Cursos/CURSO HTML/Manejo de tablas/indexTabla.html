@@ -45,7 +45,7 @@
     </table>
     <br>
     <section class="formularios">
-    <form>
+    <form onsubmit="alerta()">
         <label for="Nombre">Nombres</label>
         <input type="text" class="Nombre" id="Nombre">
         <label for="Apellido">Apellidos</label>
@@ -60,7 +60,7 @@
         </div>
         <div>
             <input type="reset" name="Borrar" id="Borrar">
-            <button onclick="alerta()">Alertar</button>
+            <button type="submit">Alertar</button>
         </div>
     </form>
 </section>
