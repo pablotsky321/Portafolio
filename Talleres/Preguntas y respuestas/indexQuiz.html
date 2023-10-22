@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=!, initial-scale=1.0">
+        <link href="quizStyle.css" rel="stylesheet" type="text/css" />
+        <title>Quiz</title>
+    </head>
+    <header>
+        <a href="/index.html">volver</a>
+    </header>
+    <body>
+        <div class="quiz-container">
+            <h1>Quiz de HTML y CSS</h1>
+            <form action="resultado.html" method="post">
+                <div class="question">
+                    <p>1. ¿Qué significa CSS?</p>
+                    <ul class="options">
+                        <li class="option">
+                            <label for="q1a">
+                                <input type="radio" id="q1a" name="q1" value="a"> Cascading Style Sheets
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q1b">
+                                <input type="radio" id="q1b" name="q1" value="b"> Computer Style Sheets
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q1c">
+                                <input type="radio" id="q1c" name="q1" value="c"> Creative Style Sheets
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <p>2. ¿Cuál es el lenguaje de marcado utilizado para crear páginas web?</p>
+                    <ul class="options">
+                        <li class="option">
+                            <label for="q2a">
+                                <input type="radio" id="q2a" name="q2" value="a"> HTML
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q2b">
+                                <input type="radio" id="q2b" name="q2" value="b"> CSS
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q2c">
+                                <input type="radio" id="q2c" name="q2" value="c"> JavaScript
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fin de preguntas -->
+                <div class="question">
+                    <p>3. ¿Cuál es la propiedad CSS para establecer el color de fondo de un elemento?</p>
+                    <ul class="options">
+                        <li class="option">
+                            <label for="q10a">
+                                <input type="radio" id="q10a" name="q10" value="a"> color
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q10b">
+                                <input type="radio" id="q10b" name="q10" value="b"> background-color
+                            </label>
+                        </li>
+                        <li class="option">
+                            <label for="q10c">
+                                <input type="radio" id="q10c" name="q10" value="c"> text-color
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <input type="submit" value="Enviar respuestas">
+            </form>
+        </div>
+    </body>
+    </html>
