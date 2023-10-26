@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Ej2Style.css" rel="stylesheet" type="text/css" >
+    <title>Triangulo y circulo</title>
+</head>
+<header>
+    <a href="/Talleres/EjerciciosJS/indexEj.html">volver</a>
+</header>
+<body>
+    <div class="container">
+        <h1>Calculadora de Área</h1>
+        <select id="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="circulo">Círculo</option>
+        </select>
+        <div id="triangulo" style="display: none;">
+            <label>Base (b):</label>
+            <input type="number" id="baseTriangulo"><br>
+            <label>Altura (h):</label>
+            <input type="number" id="alturaTriangulo"><br>
+        </div>
+        <div id="rectangulo" style="display: none;">
+            <label>Base (b):</label>
+            <input type="number" id="baseRectangulo"><br>
+            <label>Altura (h):</label>
+            <input type="number" id="alturaRectangulo"><br>
+        </div>
+        <div id="circulo" style="display: none;">
+            <label>Radio (r):</label>
+            <input type="number" id="radioCirculo"><br>
+        </div>
+        <button onclick="calcularArea()">Calcular Área</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="Ej2Script.js"></script>
+</body>
+</html>
